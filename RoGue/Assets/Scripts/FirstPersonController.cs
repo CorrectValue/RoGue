@@ -46,7 +46,6 @@ public class FirstPersonController : MonoBehaviour
         movement.y = gravity;
 
         movement *= Time.deltaTime;
-
         movement = transform.TransformDirection(movement);
         _charController.Move(movement);
         
